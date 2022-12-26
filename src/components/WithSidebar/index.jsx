@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 import selectors from 'data/selectors';
 import thunkActions from 'data/thunkActions';
+import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
 
 /**
  * WithSidebar
@@ -30,6 +31,19 @@ export class WithSidebar extends React.Component {
     });
   }
 
+  componentDidMount() {
+		const script = document.createElement("script");
+		script.type = "application/json";
+		script.innerHTML = `gtag('config', 'G-XDGY5ZHRR0', {
+      'user_id': ${getAuthenticatedUser().userId} 
+      })`;
+    script.async = true;
+		document.head.appendChild(script);
+    return () => {
+      document.head.removeChild(script);
+    }
+  }
+  
   render() {
     return (
       <div className="d-flex sidebar-container page-gradebook">
