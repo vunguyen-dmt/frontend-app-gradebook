@@ -1,14 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`LabelReplacements MastersOnlyLabelReplacement snapshot 1`] = `
+<div>
+  defaultMessAge
+  <span
+    className="font-weight-normal"
+  >
+    *
+  </span>
+</div>
+`;
+
 exports[`LabelReplacements TotalGradeLabelReplacement displays overlay tooltip 1`] = `
 <Tooltip
   id="course-grade-tooltip"
 >
-  <FormattedMessage
-    defaultMessage="Total Grade values are always displayed as a percentage"
-    description="Gradebook table message that total grades are displayed in percent format"
-    id="gradebook.GradesView.table.totalGradePercentage"
-  />
+  Total Grade values are always displayed as a percentage
 </Tooltip>
 `;
 
@@ -20,11 +27,7 @@ exports[`LabelReplacements TotalGradeLabelReplacement snapshot 1`] = `
       <Tooltip
         id="course-grade-tooltip"
       >
-        <FormattedMessage
-          defaultMessage="Total Grade values are always displayed as a percentage"
-          description="Gradebook table message that total grades are displayed in percent format"
-          id="gradebook.GradesView.table.totalGradePercentage"
-        />
+        Total Grade values are always displayed as a percentage
       </Tooltip>
     }
     placement="left"
@@ -36,23 +39,13 @@ exports[`LabelReplacements TotalGradeLabelReplacement snapshot 1`] = `
     }
   >
     <div>
-      <FormattedMessage
-        defaultMessage="Total Grade (%)"
-        description="Gradebook table total grade column header"
-        id="gradebook.GradesView.table.headings.totalGrade"
-      />
+      Total Grade (%)
       <div
         id="courseGradeTooltipIcon"
       >
         <Icon
           className="fa fa-info-circle"
-          screenReaderText={
-            <FormattedMessage
-              defaultMessage="Total Grade values are always displayed as a percentage"
-              description="Gradebook table message that total grades are displayed in percent format"
-              id="gradebook.GradesView.table.totalGradePercentage"
-            />
-          }
+          screenReaderText="Total Grade values are always displayed as a percentage"
         />
       </div>
     </div>
@@ -63,20 +56,17 @@ exports[`LabelReplacements TotalGradeLabelReplacement snapshot 1`] = `
 exports[`LabelReplacements UsernameLabelReplacement snapshot 1`] = `
 <div>
   <div>
-    <FormattedMessage
-      defaultMessage="Username"
-      description="Gradebook table username column header"
-      id="gradebook.GradesView.table.headings.username"
-    />
+    Username
   </div>
   <div
     className="font-weight-normal student-key"
   >
-    <FormattedMessage
-      defaultMessage="Student Key*"
-      description="Gradebook table Student Key label"
-      id="gradebook.GradesView.table.labels.studentKey"
-    />
+    Student Key
+    <span
+      className="font-weight-normal"
+    >
+      *
+    </span>
   </div>
 </div>
 `;
@@ -89,11 +79,7 @@ exports[`snapshot left to right overlay placement 1`] = `
       <Tooltip
         id="course-grade-tooltip"
       >
-        <FormattedMessage
-          defaultMessage="Total Grade values are always displayed as a percentage"
-          description="Gradebook table message that total grades are displayed in percent format"
-          id="gradebook.GradesView.table.totalGradePercentage"
-        />
+        Total Grade values are always displayed as a percentage
       </Tooltip>
     }
     placement="right"
@@ -105,23 +91,13 @@ exports[`snapshot left to right overlay placement 1`] = `
     }
   >
     <div>
-      <FormattedMessage
-        defaultMessage="Total Grade (%)"
-        description="Gradebook table total grade column header"
-        id="gradebook.GradesView.table.headings.totalGrade"
-      />
+      Total Grade (%)
       <div
         id="courseGradeTooltipIcon"
       >
         <Icon
           className="fa fa-info-circle"
-          screenReaderText={
-            <FormattedMessage
-              defaultMessage="Total Grade values are always displayed as a percentage"
-              description="Gradebook table message that total grades are displayed in percent format"
-              id="gradebook.GradesView.table.totalGradePercentage"
-            />
-          }
+          screenReaderText="Total Grade values are always displayed as a percentage"
         />
       </div>
     </div>
@@ -137,11 +113,7 @@ exports[`snapshot right to left overlay placement 1`] = `
       <Tooltip
         id="course-grade-tooltip"
       >
-        <FormattedMessage
-          defaultMessage="Total Grade values are always displayed as a percentage"
-          description="Gradebook table message that total grades are displayed in percent format"
-          id="gradebook.GradesView.table.totalGradePercentage"
-        />
+        Total Grade values are always displayed as a percentage
       </Tooltip>
     }
     placement="left"
@@ -153,23 +125,13 @@ exports[`snapshot right to left overlay placement 1`] = `
     }
   >
     <div>
-      <FormattedMessage
-        defaultMessage="Total Grade (%)"
-        description="Gradebook table total grade column header"
-        id="gradebook.GradesView.table.headings.totalGrade"
-      />
+      Total Grade (%)
       <div
         id="courseGradeTooltipIcon"
       >
         <Icon
           className="fa fa-info-circle"
-          screenReaderText={
-            <FormattedMessage
-              defaultMessage="Total Grade values are always displayed as a percentage"
-              description="Gradebook table message that total grades are displayed in percent format"
-              id="gradebook.GradesView.table.totalGradePercentage"
-            />
-          }
+          screenReaderText="Total Grade values are always displayed as a percentage"
         />
       </div>
     </div>
